@@ -77,6 +77,7 @@ void autonomus (void)
   tray.setBrake(brakeType::hold);
   arm.resetRotation();
   tray.resetRotation();
+  /**
   
     frontRight.spin(vex::directionType::rev,50, vex::percentUnits::pct);
     frontLeft.spin(vex::directionType::rev,50, vex::percentUnits::pct);
@@ -97,7 +98,9 @@ void autonomus (void)
     backRight.stop();
     backLeft.stop();
 
-/**
+    */
+
+
 Brain.resetTimer();
 while(Brain.timer(timeUnits::sec)<5)
 {
@@ -126,7 +129,7 @@ while(Brain.timer(timeUnits::sec)<5)
 task::sleep(300);
 
  driveForwards (2500);
-  */
+  
  }
 
 
